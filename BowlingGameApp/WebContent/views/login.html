@@ -1,0 +1,44 @@
+<div class="backgroundImage">
+<div class="container">
+	<div class="card card-container">
+		<img id="profile-img" class="profile-img-card"
+			src="images/logo.png" />
+		<p id="profile-name" class="profile-name-card"></p>
+		
+		<div class="errorMsgSpace hide text-center messagePos" id="invalidCredentials"><span class="errorMsgText">UserName or password is incorrect</span></div>
+		
+		<form name="myForm" class="form-signin">
+
+			<div class="form-group loginUserNameFrm">
+				<label for="inputEmail" class=login-text>User Name</label> 
+				<input ng-click="removeEmailError()" ng-model="userName" maxlength="50" type="email" class="form-control" id="inputEmail" name="username"
+					placeholder="Enter email" ng-blur="validate($event)"/> 
+				
+				<span class="inputError hide emailIdError">Please enter a valid Username</span>   
+			</div>
+			<div class="form-group loginPasswordFrm">	
+				<label for="inputPassword"	class=login-text>Password</label> 
+				<input ng-model="password" type="password" class="form-control login-textbox" id="inputPassword" name=""
+					placeholder="Password" ng-blur="validate($event)"/>
+				<span class="inputError hide passwordError">Please enter a valid password</span>
+			</div>	
+
+			<div id="remember" class="checkbox">
+				<label> <input type="checkbox" value="remember-me">
+					Remember me
+				</label>
+			</div>
+			<input type="submit"
+				class="btn btn-lg btn-primary btn-block btn-signin" id="submit"/>
+
+		</form>
+
+
+
+		<a href="#/forgotpassword" class="forgot-password">Forgot Password</a>
+		
+		<a href="#/registration" class="forgot-password new-user">New User</a>
+
+	</div>
+</div>
+</div>

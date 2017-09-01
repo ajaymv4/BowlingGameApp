@@ -1,0 +1,187 @@
+
+		<table>
+			<thead>
+				<tr>
+					<td width="110px">Player Name</td>
+					<td width="70px">Frame 1</td>
+					<td width="70px">Frame 2</td>
+					<td width="70px">Frame 3</td>
+					<td width="70px">Frame 4</td>
+					<td width="70px">Frame 5</td>
+					<td width="70px">Frame 6</td>
+					<td width="70px">Frame 7</td>
+					<td width="70px">Frame 8</td>
+					<td width="70px">Frame 9</td>
+					<td width="80px">Frame 10</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="player in players">
+						<td>
+							<div class="playername">
+								{{player.name}}
+							</div>	
+						</td>
+					<td>
+						<div class="Cell1">
+							<div ng-if="scoreList[0].chance1Score==10">X</div>
+							<div ng-if="scoreList[0].chance1Score<10 && scoreList[0].chance1Score>0">{{scoreList[0].chance1Score}}</div>
+							<div ng-if="scoreList[0].chance1Score==0">-</div>
+						</div>
+						<div class="Cell2">
+						<div ng-if="scoreList[0].chance1Score+scoreList[0].chance2Score==10 && scoreList[0].chance2Score!=0">/</div>
+							<div ng-if="scoreList[0].chance1Score+scoreList[0].chance2Score<10">
+								{{scoreList[0].chance2Score}}
+							</div>	
+							<div ng-if="scoreList[0].chance2Score==0 && scoreList[0].chance1Score!=10">-</div>
+						</div>
+						<div class="Cell3" ng-if="player.scoreList[0].frameScore>0">{{player.scoreList[0].frameScore}}</div>
+					</td>
+					<td>
+						<div class="Cell1">
+							<div ng-if="scoreList[1].chance1Score==10">X</div>
+							<div ng-if="scoreList[1].chance1Score<10 && scoreList[1].chance1Score>0">{{scoreList[1].chance1Score}}</div>
+							<div ng-if="scoreList[1].chance1Score==0">-</div>
+						</div>
+						<div class="Cell2">
+							<div ng-if="scoreList[1].chance1Score+scoreList[1].chance2Score==10 && scoreList[1].chance2Score!=0">/</div>
+							<div ng-if="scoreList[1].chance1Score+scoreList[1].chance2Score<10">
+								{{scoreList[1].chance2Score}}
+							</div>	
+							<div ng-if="scoreList[1].chance2Score==0  && scoreList[1].chance1Score!=10">-</div>	
+						</div>
+						<div class="Cell3" ng-if="player.scoreList[1].frameScore>0">{{player.scoreList[1].frameScore}}</div>
+					</td>
+					<td>
+						<div class="Cell1">
+							<div ng-if="scoreList[2].chance1Score==10">X</div>
+							<div ng-if="scoreList[2].chance1Score<10 && scoreList[2].chance1Score>0">{{scoreList[2].chance1Score}}</div>
+							<div ng-if="scoreList[2].chance1Score==0">-</div>
+						</div>
+						<div class="Cell2">
+							<div ng-if="scoreList[2].chance1Score+scoreList[2].chance2Score==10 && scoreList[2].chance2Score!=0">/</div>
+							<div ng-if="scoreList[2].chance1Score+scoreList[2].chance2Score<10">
+								{{scoreList[2].chance2Score}}
+							</div>	
+							<div ng-if="scoreList[2].chance2Score==0  && scoreList[2].chance1Score!=10">-</div>
+						</div>
+						<div class="Cell3" ng-if="player.scoreList[2].frameScore>0">{{player.scoreList[2].frameScore}}</div>
+					</td>
+					<td>
+						<div class="Cell1">
+							<div ng-if="scoreList[3].chance1Score==10">X</div>
+							<div ng-if="scoreList[3].chance1Score<10 && scoreList[3].chance1Score>0">{{scoreList[3].chance1Score}}</div>
+							<div ng-if="scoreList[3].chance1Score==0">-</div>
+						</div>
+						<div class="Cell2">
+							<div ng-if="scoreList[3].chance1Score+scoreList[3].chance2Score==10 && scoreList[3].chance2Score!=0">/</div>
+							<div ng-if="scoreList[3].chance1Score+scoreList[3].chance2Score<10">
+								{{scoreList[3].chance2Score}}
+							</div>	
+							<div ng-if="scoreList[3].chance2Score==0  && scoreList[3].chance1Score!=10">-</div>
+						</div>
+						<div class="Cell3" ng-if="player.scoreList[3].frameScore>0">{{player.scoreList[3].frameScore}}</div>
+					</td>
+					<td>
+						<div class="Cell1">
+							<div ng-if="scoreList[4].chance1Score==10">X</div>
+							<div ng-if="scoreList[4].chance1Score<10 && scoreList[4].chance1Score>0">{{scoreList[4].chance1Score}}</div>
+							<div ng-if="scoreList[4].chance1Score==0">-</div>
+						</div>
+						<div class="Cell2">
+							<div ng-if="scoreList[4].chance1Score+scoreList[4].chance2Score==10 && scoreList[4].chance2Score!=0">/</div>
+							<div ng-if="scoreList[4].chance1Score+scoreList[4].chance2Score<10">
+								{{scoreList[4].chance2Score}}
+							</div>	
+							<div ng-if="scoreList[4].chance2Score==0  && scoreList[4].chance1Score!=10">-</div>
+						</div>
+						<div class="Cell3" ng-if="player.scoreList[4].frameScore>0">{{player.scoreList[4].frameScore}}</div>
+					</td>
+					<td>
+						<div class="Cell1">
+							<div ng-if="scoreList[5].chance1Score==10">X</div>
+							<div ng-if="scoreList[5].chance1Score<10 && scoreList[5].chance1Score>0">{{scoreList[5].chance1Score}}</div>
+							<div ng-if="scoreList[5].chance1Score==0">-</div>
+						</div>
+						<div class="Cell2">
+							<div ng-if="scoreList[5].chance1Score+scoreList[5].chance2Score==10 && scoreList[5].chance2Score!=0">/</div>
+							<div ng-if="scoreList[5].chance1Score+scoreList[5].chance2Score<10">
+								{{scoreList[5].chance2Score}}
+							</div>	
+							<div ng-if="scoreList[5].chance2Score==0  && scoreList[5].chance1Score!=10">-</div>
+						</div>
+						<div class="Cell3" ng-if="player.scoreList[5].frameScore>0">{{player.scoreList[5].frameScore}}</div>
+					</td>
+					<td>
+						<div class="Cell1">
+							<div ng-if="scoreList[6].chance1Score==10">X</div>
+							<div ng-if="scoreList[6].chance1Score<10 && scoreList[6].chance1Score>0">{{scoreList[6].chance1Score}}</div>
+							<div ng-if="scoreList[6].chance1Score==0">-</div>
+						</div>
+						<div class="Cell2">
+							<div ng-if="scoreList[6].chance1Score+scoreList[6].chance2Score==10 && scoreList[6].chance2Score!=0">/</div>
+							<div ng-if="scoreList[6].chance1Score+scoreList[6].chance2Score<10">
+								{{scoreList[6].chance2Score}}
+							</div>	
+							<div ng-if="scoreList[6].chance2Score==0  && scoreList[6].chance1Score!=10">-</div>
+						</div>
+						<div class="Cell3" ng-if="player.scoreList[6].frameScore>0">{{player.scoreList[6].frameScore}}</div>
+					</td>
+					<td>
+						<div class="Cell1">
+							<div ng-if="scoreList[7].chance1Score==10">X</div>
+							<div ng-if="scoreList[7].chance1Score<10 && scoreList[7].chance1Score>0">{{scoreList[7].chance1Score}}</div>
+							<div ng-if="scoreList[7].chance1Score==0">-</div>
+						</div>
+						<div class="Cell2">
+							<div ng-if="scoreList[7].chance1Score+scoreList[7].chance2Score==10 && scoreList[7].chance2Score!=0">/</div>
+							<div ng-if="scoreList[7].chance1Score+scoreList[7].chance2Score<10">
+								{{scoreList[7].chance2Score}}
+							</div>	
+							<div ng-if="scoreList[7].chance2Score==0  && scoreList[7].chance1Score!=10">-</div>	
+						</div>
+						<div class="Cell3" ng-if="player.scoreList[7].frameScore>0">{{player.scoreList[7].frameScore}}</div>
+					</td>
+					<td>
+						<div class="Cell1">
+							<div ng-if="scoreList[8].chance1Score==10">X</div>
+							<div ng-if="scoreList[8].chance1Score<10 && scoreList[8].chance1Score>0">{{scoreList[8].chance1Score}}</div>
+							<div ng-if="scoreList[8].chance1Score==0">-</div>
+						</div>
+						<div class="Cell2">
+							<div ng-if="scoreList[8].chance1Score+scoreList[8].chance2Score==10 && scoreList[8].chance2Score!=0">/</div>
+							<div ng-if="scoreList[8].chance1Score+scoreList[8].chance2Score<10">
+								{{scoreList[8].chance2Score}}
+							</div>	
+							<div ng-if="scoreList[8].chance2Score==0  && scoreList[8].chance1Score!=10">-</div>
+						</div>
+						<div class="Cell3" ng-if="player.scoreList[8].frameScore>0">{{player.scoreList[8].frameScore}}</div>
+					</td>
+					<td>
+						<div class="Cell101">
+						<div ng-if="scoreList[9].chance1Score==10">X</div>
+							<div ng-if="scoreList[9].chance1Score<10 && scoreList[9].chance1Score>0">{{scoreList[9].chance1Score}}</div>
+							<div ng-if="chance1Scoref10==0">-</div>
+						</div>
+						<div class="Cell102">
+						
+						<div ng-if="chance3Value==10">X</div>
+						<div ng-if="chance3Value!=10">{{chance3Value}}</div>
+						<div ng-if="chance3Value==0">-</div>
+						
+						</div>
+						<div class="bonusCell102">
+						<div ng-if="scoreList[9].chance2Score==10">X</div>
+						<div ng-if="scoreList[9].chance2Score<10 && scoreList[9].chance1Score+scoreList[9].chance2Score==10">/</div>
+						<div ng-if="scoreList[9].chance2Score==0">-</div>
+						<div ng-if="scoreList[9].chance1Score+scoreList[9].chance1Score<10">
+								{{scoreList[9].chance2Score}}
+						
+						</div>
+						</div>
+						<div class="Cell103">{{frame10Score}}</div>
+					</td>
+				</tr>
+
+			</tbody>
+		</table>

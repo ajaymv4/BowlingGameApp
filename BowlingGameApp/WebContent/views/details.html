@@ -1,0 +1,10 @@
+<div id="legend">
+	<legend class="">Enter names of all the {{noofplayers}}
+		Players</legend>
+</div>
+<div ng-repeat="player in players">
+	<label>PlayerName</label> <input type="text" id="noofPlayers"
+		name="noofPlayers" ng-model="players[$index].name" placeholder="" class="input-xlarge">
+</div>
+
+<button type="button" ng-click="saveAllNames()">Submit</button>
